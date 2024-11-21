@@ -2,6 +2,8 @@
 
 Zustand Tracker is a lightweight 🛠️ React component designed for debugging Zustand stores. It provides a visual, interactive panel to inspect the state of multiple stores in real-time. Perfect for developers who want to stay in control of their app state! 🚀
 
+![Zustand Tracker Demo](images/zustand-tracker-ui.png)
+
 ## 📦 Installation
 
 ```bash
@@ -51,10 +53,26 @@ export default function App() {
 
 ## 📝 Props
 
-| Prop         | Type                  | Description                                                     | Default                         |
-| ------------ | --------------------- | --------------------------------------------------------------- | ------------------------------- |
-| `stores`     | `Record<string, any>` | A collection of Zustand stores to be displayed in the debug UI. | Required                        |
-| `panelStyle` | `React.CSSProperties` | Custom styles for the debug panel.                              | A sleek, fixed, and dark design |
+### `stores` (required)
+
+- **Type**: Record<string, unknown>
+- **Description**: The Zustand stores you want to debug. Provide the stores as a key-value pair, where each key is the store name and the value is the current state.
+
+### `panelStyle` (optional)
+
+- **Type**: `CSSProperties`
+- **Description**: Customize the style of the debug panel. The following properties can be customized:
+
+  - **`position`**: The CSS `position` property for the panel. Default is `"fixed"`.
+  - **`top`**: Distance from the top of the viewport. Default is `0`.
+  - **`right`**: Distance from the right of the viewport. Default is `0`.
+  - **`width`**: Width of the debug panel. Default is `"50vw"`.
+  - **`height`**: Height of the debug panel. Default is `"100vh"`.
+  - **`background`**: Background color of the panel. Default is `"rgba(0, 0, 0, 0.8)"`.
+  - **`color`**: Text color used in the panel. Default is `"white"`.
+  - **`zIndex`**: The `z-index` of the debug panel. Default is `9999`.
+  - **`overflowY`**: Control vertical overflow. Default is `"auto"`.
+  - **`padding`**: Padding inside the debug panel. Default is `"20px"`.
 
 ## ⚠️ Warnings
 
