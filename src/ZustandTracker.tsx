@@ -87,7 +87,7 @@ const ZustandTracker = ({
 
           {/* Header of the debug panel */}
           <h1 style={{ textAlign: "center", marginBottom: "20px" }}>
-            Store Debug Panel
+            Zustand Tracker
           </h1>
 
           {/* Render each store passed as props */}
