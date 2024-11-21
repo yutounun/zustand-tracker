@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // The JavaScript version to output
+    "module": "ESNext", // Output as ES Modules
+    "outDir": "./dist", // Directory for build output
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Ensure compatibility with ES modules
+    "skipLibCheck": true, // Skip type checking for external libraries
+    "declaration": true, // Generate type definition files
+    "declarationMap": true, // Generate source maps for type definition files
+    "sourceMap": true, // Generate source maps
+    "jsx": "react-jsx", // Support React JSX
+    "moduleResolution": "node", // Use Node.js module resolution
+    "allowSyntheticDefaultImports": true // Allow default imports
+  },
+  "include": ["src"], // Directories to include for compilation
+  "exclude": ["node_modules"] // Directories to exclude from compilation
+}
