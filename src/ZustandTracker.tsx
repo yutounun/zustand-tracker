@@ -90,8 +90,8 @@ const ZustandTracker = ({
           <button
             style={{
               position: "absolute",
-              top: "10px",
-              right: "10px",
+              top: "20px",
+              right: "25px",
               background: "transparent",
               color: "white",
               border: "none",
