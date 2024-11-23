@@ -28,7 +28,7 @@ const howToCode = `
       stores={{
         exampleStore: exampleStore,
       }}
-      panelStyle={{
+      panelStyle={{ // This is optional
         backgroundColor: "white",
         color: "black",
       }}

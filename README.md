@@ -43,6 +43,11 @@ export default function App() {
         stores={{
           YourStore: yourStoreData,
         }}
+        panelStyle={{
+          // This is optional
+          backgroundColor: "white",
+          color: "black",
+        }}
       />
       {/* Your application components */}
       <div>Hello World</div>
